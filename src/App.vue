@@ -10,13 +10,19 @@ import PomodoroTracker from "@/components/PomodoroTracker.vue";
 </script>
 
 <template>
-  <Card class="m-2">
-    <CardHeader>
-      <CardTitle>Pomodoro Tracker</CardTitle>
-      <CardDescription>
-        A simple Pomodoro timer to help you manage your time effectively.
-      </CardDescription>
-    </CardHeader>
-    <CardContent><PomodoroTracker /></CardContent>
-  </Card>
+  <div
+    class="flex items-center justify-center min-h-screen bg-primary-foreground"
+  >
+    <Card>
+      <CardHeader>
+        <CardTitle class="text-primary/80 font-bold text-xl"
+          >Pomodoro Tracker</CardTitle
+        >
+        <CardDescription class="text-primary/75">
+          A simple Pomodoro timer to help you manage your time effectively.
+        </CardDescription>
+      </CardHeader>
+      <CardContent> <PomodoroTracker /> </CardContent>
+    </Card>
+  </div>
 </template>
